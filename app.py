@@ -254,7 +254,7 @@ def display_chat_message(message, is_user=False):
         st.markdown(f"""
         <div class="bot-message-container">
             <div class="custom-chat-message custom-chat-bot">
-                👾<strong>RichBot:</strong><br>{message}
+                👾 <strong>RichBot:</strong><br>{message}
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -289,7 +289,7 @@ with st.sidebar:
     
     st.markdown("---")
     
-    st.header("About RichBot")
+    st.header("👾 About RichBot")
     st.markdown("""
     **RichBot** adalah AI chatbot yang dirancang khusus untuk memperkenalkan profil Richard Dean Tanjaya. 
     
@@ -403,7 +403,7 @@ with st.sidebar:
 
 def main():
     # === MAIN INTERFACE ===
-    st.title("RichBot - Personal AI Assistant")
+    st.title("👾 RichBot - Personal AI Assistant")
     st.markdown("*Selamat datang! Saya siap membantu Anda mengenal Richard Dean Tanjaya.*")
 
     try:
