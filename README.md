@@ -4,11 +4,13 @@ Proyek ini adalah implementasi AI Personal Assistant bernama 'RichBot' yang dira
 
 ## 📂 Project Structure
 
-- `app.py` — Aplikasi Streamlit utama untuk interface web chatbot dan logika RAG.
-- `resource/PersonalProfile_RAG_purpose.docx` — Dokumen profil default yang digunakan RichBot sebagai sumber informasi.
 - `.streamlit/config.toml` — Konfigurasi Streamlit (jika ada, untuk styling atau setting lain).
-- `requirements.txt` — Daftar dependensi Python yang diperlukan untuk menjalankan project.
+- `resource/Personal Profile - Template.docx` — Dokumen profil template untuk user download.
+- `resource/PersonalProfile_RAG_purpose.docx` — Dokumen profil default yang digunakan RichBot sebagai sumber informasi.
 - `.gitignore` — File untuk mengabaikan folder atau file tertentu saat push ke Git.
+- `app.py` — Aplikasi Streamlit utama untuk interface web chatbot dan logika RAG.
+- `chatbot_logic.py` — File yang berisi logika inti chatbot, termasuk fungsi-fungsi untuk pemrosesan dokumen, pembuatan vector store, dan interaksi dengan LLM.
+- `requirements.txt` — Daftar dependensi Python yang diperlukan untuk menjalankan project.
 
 ## 🚀 Cara Run Aplikasi
 
@@ -22,8 +24,8 @@ cd Personal-Chatbot-With-RAG
 ```bash
 pip install -r requirements.txt
 ```
-### Buat .streamlit/secrets.toml
-Pastikan Anda memiliki NVIDIA API Key pada file tersebut:
+### Konfigurasi NVIDIA API Key
+Pastikan anda membuat file .streamlit/secrets.toml yang berisi NVIDIA API Key:
 ```bash
 NVIDIA_API_KEY="YOUR_API_KEY"
 ```
