@@ -16,7 +16,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-DEFAULT_DOC_PATH = "resource/Personal Profile - RAG purpose.docx"
+DEFAULT_DOC_PATH = "resource/PersonalProfile_RAG_purpose.docx"
 TEMPLATE_URL = "https://raw.githubusercontent.com/RichardDeanTan/Personal-Chatbot-With-RAG/main/resource/Personal%20Profile%20-%20Template.docx"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
 PRIMARY_LLM_MODEL = "gotocompany/gemma-2-9b-cpt-sahabatai-instruct"
