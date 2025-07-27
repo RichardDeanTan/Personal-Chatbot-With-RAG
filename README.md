@@ -39,13 +39,13 @@ Klik link berikut untuk langsung membuka aplikasi web:
 #### 👉 [Streamlit - Personal Chatbot with RAG](https://personal-chatbot-with-rag-richardtanjaya.streamlit.app/)
 
 ## 💡 Fitur
-**✅ Personalized Q&A |** Menjawab pertanyaan pengguna berdasarkan profil personal yang disediakan.
-**✅ Retrieval-Augmented Generation (RAG) |** Memastikan akurasi jawaban dengan mengambil informasi dari dokumen relevan.
-**✅ Custom Document Upload |** Pengguna dapat mengunggah dokumen profil mereka sendiri (format .docx) untuk digunakan RichBot.
-**✅ Dynamic Personalities |** RichBot dirancang dengan kepribadian santai, ramah, dan informatif.
-**✅ Session-based Memory |** Mengelola riwayat percakapan untuk konteks (memori terbatas pada 1 interaksi terakhir).
-**✅ Customizable Parameters |** Mengatur parameter LLM seperti Temperature, Top P, Max Tokens, dan jumlah dokumen yang diambil (K).
-**✅ Interactive Web Interface |** User-friendly interface menggunakan Streamlit dengan styling kustom.
+- ✅ **Personalized Q&A |** Menjawab pertanyaan pengguna berdasarkan profil personal yang disediakan.
+- ✅ **Retrieval-Augmented Generation (RAG) |** Memastikan akurasi jawaban dengan mengambil informasi dari dokumen relevan.
+- ✅ **Custom Document Upload |** Pengguna dapat mengunggah dokumen profil mereka sendiri (format .docx) untuk digunakan RichBot.
+- ✅ **Dynamic Personalities |** RichBot dirancang dengan kepribadian santai, ramah, dan informatif.
+- ✅ **Session-based Memory |** Mengelola riwayat percakapan untuk konteks (memori terbatas pada 1 interaksi terakhir).
+- ✅ **Customizable Parameters |** Mengatur parameter LLM seperti Temperature, Top P, Max Tokens, dan jumlah dokumen yang diambil (K).
+- ✅ **Interactive Web Interface |** User-friendly interface menggunakan Streamlit dengan styling kustom.
 
 ## ⚙️ Tech Stack
 - **Large Language Model (LLM)** ~ NVIDIA NIM (via `langchain_nvidia_ai_endpoints`)
