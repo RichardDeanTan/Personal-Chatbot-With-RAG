@@ -4,7 +4,7 @@ Proyek ini adalah implementasi AI Personal Assistant bernama 'RichBot' yang dira
 
 ## 📂 Project Structure
 
-- `.streamlit/config.toml` — Konfigurasi Streamlit (jika ada, untuk styling atau setting lain).
+- `.streamlit/config.toml` — Konfigurasi Streamlit (auto darkmode).
 - `resource/Personal Profile - Template.docx` — Dokumen profil template untuk user download.
 - `resource/PersonalProfile_RAG_purpose.docx` — Dokumen profil default yang digunakan RichBot sebagai sumber informasi.
 - `.gitignore` — File untuk mengabaikan folder atau file tertentu saat push ke Git.
