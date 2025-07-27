@@ -7,6 +7,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
 import tempfile
+import requests
 
 st.set_page_config(
     page_title="RichBot - AI Personal Assistant",
@@ -16,6 +17,7 @@ st.set_page_config(
 )
 
 DEFAULT_DOC_PATH = "resource/Personal Profile - RAG purpose.docx"
+TEMPLATE_URL = "https://raw.githubusercontent.com/RichardDeanTan/Personal-Chatbot-With-RAG/main/resource/Personal%20Profile%20-%20Template.docx"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
 PRIMARY_LLM_MODEL = "gotocompany/gemma-2-9b-cpt-sahabatai-instruct"
 
@@ -320,13 +322,16 @@ with st.sidebar:
     )
 
     try:
-        with open(DEFAULT_DOC_PATH, "rb") as file:
+        response = requests.get(TEMPLATE_URL)
+        if response.status_code == 200:
             st.download_button(
                 label="📥 Download Template",
-                data=file,
+                data=response.content,
                 file_name="Document_Template.docx",
                 mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
             )
+        else:
+            st.error("❌ Failed to fetch template from GitHub.")
     except FileNotFoundError:
         st.error("Template file not found.")
     
